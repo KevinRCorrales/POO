@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ej41 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         // Ejercicio 4.1
@@ -8,7 +8,6 @@ public class Main {
         // Parte A
         System.out.print("Ingresa el valor de un ángulo: ");
         int ang = input.nextInt();
-        input.nextLine(); // Limpiar el bufer
         if (ang == 90) {
             System.out.println("El ángulo es un ángulo recto");
         } else {

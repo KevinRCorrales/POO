@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ej51 {
+public class ej54 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int cuenta = 0;
@@ -9,12 +9,12 @@ public class ej51 {
         do {
             System.out.print("Ingresa un número: ");
             numero = input.nextInt();
-            if (numero >= 0) {
+            if (numero > 0) {
                 sumaNumeros += numero;
                 cuenta++;
             }
-        // NUMERO NEGATIVO; el 0 es neutro, no negativo, por ende se debe aceptar
-        } while (numero >= 0);
+            // NUMERO NO POSITIVO; el 0 es neutro, no negativo ni positivo, por ende no se debe aceptar
+        } while (numero > 0);
         if (sumaNumeros == 0) {
             System.err.println("No se ingresaron valores positivos");
         } else {

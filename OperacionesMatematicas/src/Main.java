@@ -21,8 +21,6 @@ public class Main {
         int n2 = sc.nextInt();
 
         Operaciones objOp3 =  new Operaciones(n1, n2);
-        //a = objOp3.inputInt();
-        //b = objOp3.inputInt();
 
         System.out.println("Suma: " + objOp3.sumar());
         System.out.println("Resta: " + objOp3.restar());

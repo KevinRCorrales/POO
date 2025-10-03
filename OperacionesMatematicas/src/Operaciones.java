@@ -29,13 +29,25 @@ public class Operaciones {
         return (double) a / (double) b;
     }
 
-    /*
-    public int inputInt() {
-        Scanner sc = new Scanner(System.in);
-        IO.print("Digite el entero: ");
-        int n = sc.nextInt();
-        sc.close();
-        return n;
+    // 5 operaciones adicionales
+
+    public double potencia() {
+        return Math.pow(a, b);
     }
-    */
+
+    public double hipotenusa() {
+        return Math.hypot(a, b);
+    }
+
+    public double areaTriangulo() {
+        return (double) (a * b) / 2.0;
+    }
+
+    public double perimetroCuadrilatero() {
+        return 2 * a + 2 * b;
+    }
+
+    public double promedio() {
+        return (double) (a + b) / 2.0;
+    }
 }
